@@ -305,7 +305,10 @@
 
     <script>
       function sendHeightToParent() {
-        const height = document.documentElement.scrollHeight;
+        // Pega a altura real do conteúdo da tabela
+        const table = document.querySelector('.table-fundos');
+        const height = table ? table.offsetHeight : document.body.offsetHeight;
+        
         window.parent.postMessage(
           {
             type: "iframe-height",
