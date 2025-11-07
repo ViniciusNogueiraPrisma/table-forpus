@@ -1,0 +1,363 @@
+body.dark-mode {
+  background-color: #1d1d1d;
+  color: #e0e0e0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  --primary-color: #1d1d1d;
+
+  header.show-header .content-header .navigation a p {
+    color: #fff !important;
+  }
+
+  header.show-header .content-header .navigation a p::after {
+    background-color: #fff !important;
+  }
+
+  header.show-header .header-actions img {
+    filter: none !important;
+  }
+
+  .table-infos-home .content-table-infos-home table.table-fundos thead tr {
+    background-color: #1d1d1d;
+  }
+
+  .table-infos-home .content-table-infos-home table.table-fundos thead tr th {
+    color: #fff;
+  }
+
+  header .content-header .navigation .dropdown-item::after {
+    background-color: #1d1d1d;
+  }
+
+  header .search-bar a {
+    background-color: #1d1d1d;
+  }
+
+  #searchBox {
+    background-color: #1d1d1d;
+  }
+
+  #searchBox .input-group {
+    border-bottom: 1px solid #fff;
+  }
+
+  #searchBox .input-group .close-search-box img {
+    filter: invert(1);
+  }
+
+  .table-infos-home
+    .content-table-infos-home
+    table.table-fundos
+    tbody
+    tr.index-comparative
+    td {
+    border-top: 1px solid #1d1d1d !important;
+    border-bottom: 1px solid #1d1d1d !important;
+  }
+
+  .table-infos-home .links-table-home a {
+    border-color: #fff;
+    color: #fff;
+
+    &:hover {
+      color: #1d1d1d;
+    }
+  }
+
+  .primary-button {
+    background-color: #1d1d1d;
+    border: 1px solid #fff;
+  }
+
+  header.show-header {
+    background-color: #292828;
+
+    .logo-base {
+      filter: grayscale(1) brightness(14);
+    }
+  }
+
+  .invest-home .content-invest-home .clients-home img:hover {
+    background-color: #1d1d1d;
+  }
+
+  .result-home .content-result-home h2 {
+    color: #fff;
+  }
+
+  .result-home
+    .content-result-home
+    .cards-result
+    .cards
+    .links-results
+    .link-2 {
+    background-color: #1d1d1d;
+  }
+
+  .result-home .content-midia-result h2 {
+    color: #fff;
+  }
+
+  .result-home .content-midia-result .link-midia {
+    color: #fff;
+
+    &:hover {
+      background-color: #323131;
+    }
+  }
+
+  .nossos-fundos .content-nossos-fundos .title-nossos-fundos h3 {
+    color: #fff;
+  }
+
+  .all-nossos-fundos
+    .content-all-nossos-fundos
+    .table-tabs-wrapper
+    .table-sticky-header
+    .tab-navigation
+    .tab-btn {
+    background-color: #1d1d1d;
+  }
+
+  .duv-invest .content-duv-invest .title-duv-invest h2 {
+    color: #fff;
+  }
+
+  .duv-invest .content-duv-invest .duv-invest-items a.duv-link {
+    background-color: #1d1d1d;
+  }
+
+  .capital-emp h2 {
+    color: #fff;
+  }
+
+  .gestao-emp {
+    background-color: #1d1d1d;
+  }
+
+  .gestao-emp .content-gestao h2 {
+    color: #fff;
+  }
+
+  .gestao-emp .content-gestao p {
+    color: #fff;
+
+    b {
+      color: #fff;
+    }
+  }
+
+  .accessibility-bar-content:hover {
+    background-color: #292828;
+  }
+
+  .content-equipe {
+    background-color: #1d1d1d;
+  }
+
+  .content-equipe .cards-equipe .cards {
+    background-color: #292828;
+
+    h6 {
+      color: #fff;
+    }
+
+    .links-cards-equipe p {
+      color: #fff;
+    }
+
+    .links-cards-equipe a {
+      color: #fff;
+    }
+  }
+
+  .content-performance {
+    background-color: #1d1d1d;
+  }
+
+  .content-performance .content-performance-items .items h6 {
+    color: #fff;
+  }
+
+  .content-performance
+    .content-performance-items
+    .items
+    .cards-performance
+    .cards:hover {
+    background-color: #292828;
+
+    .infos p {
+      color: #fff;
+    }
+
+    .infos span {
+      color: #fff;
+    }
+
+    img {
+      filter: grayscale(1) brightness(2.5);
+    }
+  }
+
+  .risk .content-risk .box-infos h3 {
+    color: #fff;
+  }
+
+  .risk .content-risk .box-infos p {
+    color: #fff;
+
+    b {
+      color: #fff;
+    }
+  }
+
+  .content-fundos .fundos-sidebar .fundos-sidebar-content {
+    background-color: #292828;
+    border: 1px solid #fff;
+  }
+
+  .content-fundos
+    .fundos-sidebar
+    .fundos-sidebar-content
+    .fundos-sidebar-title {
+    color: #fff;
+  }
+
+  .content-fundos
+    .fundos-sidebar
+    .fundos-sidebar-content
+    .fundos-sidebar-nav
+    .fundos-nav-item.active {
+    color: #fff;
+  }
+
+  .content-fundos
+    .fundos-sidebar
+    .fundos-sidebar-content
+    .fundos-sidebar-nav
+    .fundos-nav-item::after {
+    background-color: #fff;
+  }
+
+  .content-fundos
+    .fundos-sidebar
+    .fundos-sidebar-content
+    .fundos-sidebar-nav
+    .fundos-nav-item {
+    color: #fff;
+  }
+
+  .content-fundos .fundos-content .fundos-content-item .fundos-content-title {
+    color: #fff;
+  }
+
+  .content-fundos
+    .fundos-content
+    .fundos-content-item
+    .fundos-content-documents
+    .documents-btn {
+    background-color: #1d1d1d;
+  }
+
+  .content-relatorios {
+    background-color: #1d1d1d;
+  }
+
+  .filter .filter-controls .filter-button.active {
+    border-color: #fff;
+  }
+
+  .filter .filter-controls .filter-button:hover {
+    border-color: #fff;
+  }
+
+  .filter .filter-controls .filter-options .filter-select select:hover {
+    border-color: #fff;
+  }
+
+  .content-relatorios
+    .accordion-relatorios
+    .accordion-item
+    .accordion-header
+    .accordion-button:hover {
+    background-color: #292828;
+  }
+
+  .content-relatorios
+    .accordion-relatorios
+    .accordion-item
+    .accordion-header
+    .accordion-button:not(.collapsed) {
+    background-color: #292828;
+    border-color: #fff;
+  }
+
+  .content-relatorios
+    .accordion-relatorios
+    .accordion-item
+    .accordion-collapse
+    .accordion-body
+    .list-item:hover {
+    border-color: #292828;
+
+    span {
+      color: #292828;
+    }
+  }
+
+  .content-politicas {
+    background-color: #1d1d1d;
+  }
+
+  .content-politicas .content-politicas-items .policy-item:hover {
+    border-color: #292828;
+
+    span {
+      color: #292828;
+    }
+  }
+
+  .content-news {
+    background-color: #1d1d1d;
+  }
+
+  .content-news .content-news-items .cards-news-items .cards {
+    background-color: #292828;
+
+    p {
+      color: #fff;
+    }
+
+    a {
+      color: #fff;
+    }
+  }
+
+  .content-news .content-news-items .cards-news-items .cards a::before {
+    background-color: #fff;
+  }
+
+  .content-news .content-news-items .cards-news-items .cards a:hover::after {
+    filter: invert(1);
+  }
+
+  .content-fale-conosco .form-label span {
+    color: #fff;
+  }
+
+  .content-fale-conosco .form-buttons .btn.btn-primary {
+    background-color: #292828;
+  }
+
+  .content-fale-conosco .form-input:focus {
+    border-color: #fff;
+  }
+
+  .content-fale-conosco .form-upload-wrapper .form-upload-label:hover {
+    border-color: #fff;
+  }
+
+  .content-equipe .cards-equipe .cards p {
+    color: #fff;
+  }
+}

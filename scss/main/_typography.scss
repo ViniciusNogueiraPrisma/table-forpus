@@ -1,0 +1,93 @@
+$font-family-base: "Montserrat", sans-serif;
+
+@function rem($pixels, $base: 16) {
+  @return #{$pixels / $base}rem;
+}
+
+html {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+body {
+  font-family: $font-family-base;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-family-base;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 0.5em;
+}
+
+h3 {
+  color: #022715;
+  font-family: Montserrat;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+h4 {
+  color: #4c685b;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+a {
+  font-size: rem(14);
+  text-decoration: none;
+
+  &.text-decoration-underline {
+    text-decoration: underline;
+  }
+}
+
+p {
+  margin-bottom: 1em;
+  font-size: rem(14);
+}
+
+strong {
+  font-weight: 700;
+}
+
+em {
+  font-style: italic;
+}

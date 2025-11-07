@@ -1,0 +1,74 @@
+.page-erro {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+
+  * {
+    font-family: Montserrat;
+  }
+
+  .text-404 {
+    color: $color-primary;
+    text-align: center;
+    font-size: rem(48);
+    font-weight: 800;
+    margin-bottom: 0;
+  }
+
+  .page-not-found {
+    color: $color-primary;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    text-align: center;
+  }
+
+  .nao-encontramos {
+    color: #666;
+    font-weight: 600;
+    font-size: rem(20);
+    margin-bottom: 12px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-family: Montserrat;
+  }
+
+  p {
+    color: #666;
+    font-family: Montserrat;
+    text-align: center;
+  }
+
+  .buttons-error {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 40px;
+  }
+
+  @media (max-width: 575px) {
+    h1 {
+      font-size: rem(48);
+    }
+  }
+
+  @media (max-width: 375px) {
+    text-align: center;
+
+    h1 {
+      font-size: rem(40);
+    }
+
+    h2 {
+      font-size: rem(24);
+    }
+
+    .buttons-error {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+}
