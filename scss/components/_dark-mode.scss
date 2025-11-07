@@ -21,7 +21,19 @@ body.dark-mode {
     background-color: #1d1d1d;
   }
 
+  table.table-fundos thead tr {
+    background-color: #1d1d1d;
+  }
+
+  table.table-fundos thead tr th {
+    color: #fff;
+  }
+
   .table-infos-home .content-table-infos-home table.table-fundos thead tr th {
+    color: #fff;
+  }
+
+  table.table-fundos thead tr th {
     color: #fff;
   }
 
@@ -54,6 +66,14 @@ body.dark-mode {
     border-top: 1px solid #1d1d1d !important;
     border-bottom: 1px solid #1d1d1d !important;
   }
+
+  table.table-fundos
+  tbody
+  tr.index-comparative
+  td {
+  border-top: 1px solid #1d1d1d !important;
+  border-bottom: 1px solid #1d1d1d !important;
+}
 
   .table-infos-home .links-table-home a {
     border-color: #fff;
