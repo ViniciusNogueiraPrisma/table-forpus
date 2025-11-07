@@ -302,5 +302,36 @@
 
     <script src="js/main.js"></script>
     <script src="js/swiper.js"></script>
+
+    <script>
+      function sendHeightToParent() {
+        const height = document.documentElement.scrollHeight;
+        window.parent.postMessage(
+          {
+            type: "iframe-height",
+            height: height,
+          },
+          "*"
+        );
+      }
+
+      window.addEventListener("load", function () {
+        sendHeightToParent();
+      });
+
+      if (window.ResizeObserver) {
+        const resizeObserver = new ResizeObserver(function () {
+          sendHeightToParent();
+        });
+        resizeObserver.observe(document.body);
+      } else {
+        setInterval(sendHeightToParent, 500);
+      }
+
+      if (typeof AOS !== "undefined") {
+        AOS.init();
+        setTimeout(sendHeightToParent, 1000);
+      }
+    </script>
   </body>
 </html>

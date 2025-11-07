@@ -86,11 +86,11 @@
 
 table.table-fundos {
   overflow: hidden;
-  border-radius: 8px;
+  // border-radius: 8px;
   width: 100%;
-  border-collapse: separate;
-  border-spacing: 0;
-  border: 1px solid transparent;
+  // border-collapse: separate;
+  // border-spacing: 0;
+  // border: 1px solid transparent;
   font-family: $font-montserrat;
 
   @media (max-width: 991px) {
