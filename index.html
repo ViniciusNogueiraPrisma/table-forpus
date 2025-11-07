@@ -305,10 +305,9 @@
 
     <script>
       function sendHeightToParent() {
-        // Pega a altura real do conteúdo da tabela
-        const table = document.querySelector('.table-fundos');
+        const table = document.querySelector(".table-fundos");
         const height = table ? table.offsetHeight : document.body.offsetHeight;
-        
+
         window.parent.postMessage(
           {
             type: "iframe-height",
@@ -317,6 +316,20 @@
           "*"
         );
       }
+
+      window.addEventListener("message", function (event) {
+        if (event.data && event.data.type === "set-dark-mode") {
+          const isDarkMode = event.data.darkMode;
+
+          if (isDarkMode) {
+            document.body.classList.add("dark-mode");
+          } else {
+            document.body.classList.remove("dark-mode");
+          }
+
+          setTimeout(sendHeightToParent, 100);
+        }
+      });
 
       window.addEventListener("load", function () {
         sendHeightToParent();
